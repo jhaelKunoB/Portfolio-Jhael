@@ -2,7 +2,7 @@ import React from 'react';
 
 const EventCard = ({ event }) => {
     return (
-        <div className="flex flex-col overflow-hidden border border-white/20 rounded-xl p-4 bg-white/5 backdrop-blur-md shadow-sm hover:shadow-md hover:scale-[1.03] transition-all duration-300">
+        <div className="flex flex-col overflow-hidden border border-white/20 rounded-xl p-4 bg-white/5 backdrop-blur-md shadow-sm hover:shadow-md transition-all duration-300">
 
             {/* Imagen */}
             <div className="w-full aspect-video overflow-hidden rounded-lg">
