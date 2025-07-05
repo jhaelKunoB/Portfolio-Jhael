@@ -37,7 +37,6 @@ const RenderToggle = ({ onSelect }) => {
 }
 
 const CertificatesAndCourses = () => {
-  console.log('CertificatesAndCourses component rendered', dataCourse)
   const [selected, setSelected] = useState('certificados')
 
   return (

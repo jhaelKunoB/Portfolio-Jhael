@@ -1,3 +1,5 @@
+'use client';
+
 import HeroSeccion from "./module/HeroSeccion";
 import Navbar from "./module/Navbar";
 import AboutSection from "./module/AboutSection";
