@@ -48,7 +48,7 @@ export const eventData = [
     date: "2 Dic 2022",
     location: "Cochabamba, Bolivia",
     role: "Participante",
-    description:"",
+    description:"Evento organizado por la Universidad del Valle para la exposición de proyectos tecnológicos desarrollados por estudiantes.",
     topics: [],
     certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Eventos/Techmakers.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0V2ZW50b3MvVGVjaG1ha2Vycy5qcGVnIiwiaWF0IjoxNzUxNzU0MDA0LCJleHAiOjE5MDk0MzQwMDR9.1FYEb9Wmr85VHxLeiBm7quxzoJJjWlnIa97Pd_3A8Ko",
     evidenceUrl: "",
