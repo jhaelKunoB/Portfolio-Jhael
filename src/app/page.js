@@ -17,7 +17,7 @@ export default function Home() {
         <AboutSection />
         <SkillSection />
         <ProyectSection />
-        <EducationSection />
+        {/* <EducationSection /> */}
         <ContactSection />
       </div>
       <BackgroundBeams className="z-[-1]" />
