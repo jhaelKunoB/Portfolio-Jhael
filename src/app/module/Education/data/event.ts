@@ -1,58 +1,57 @@
 export const eventData = [
   {
     id: "1",
-    title: "Techstars Startup Weekend Bolivia",
-    organization: "Techstars",
-    date: "20 Abr 2025",
-    location: "Cochabamba, Bolivia",
+    title: "Huawei Developer Competition Latin America 2024",
+    organization: "Huawei Cloud",
+    date: "12 Dic 2024",
+    location: "Ciudad de México, México",
     role: "Participante",
     description:
-      "Evento intensivo de 54 horas para crear una startup desde cero junto a mentores y emprendedores.",
-    topics: ["Startups", "Innovación", "Pitch"],
-        certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Courses/Introto_Data_Science_page-0001.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0NvdXJzZXMvSW50cm90b19EYXRhX1NjaWVuY2VfcGFnZS0wMDAxLmpwZyIsImlhdCI6MTc1MTczMjY3MywiZXhwIjoxOTA5NDEyNjczfQ.saUPL2NANGdNZ377W47wvSAUMIuOJfWoa1PqIgv4Bc8",
-    evidenceUrl: "https://mi-servidor.com/fotos/startup-selfie.jpg",
-    link: "https://www.techstars.com/events/startup-weekend"
+      "Iniciativa de Huawei Cloud que busca fomentar la innovación tecnológica y la colaboración entre jóvenes talentos de América Latina mediante una competencia de desarrollo de software.",
+    topics: [],
+        certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Eventos/Huawei.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0V2ZW50b3MvSHVhd2VpLmpwZWciLCJpYXQiOjE3NTE3NTUzMjgsImV4cCI6MTkwOTQzNTMyOH0.hs6HuWKzVMPW_3OkBKHJr0aMwSndXiObZ62AE9c6fHM",
+    evidenceUrl: "",
+    link: ""
   },
   {
     id: "2",
-    title: "Congreso Nacional de Ciberseguridad 2024",
-    organization: "Universidad Mayor de San Andrés",
-    date: "12 Oct 2024",
-    location: "La Paz, Bolivia",
-    role: "Expositor",
+    title: "Reconocimiento en Innovación Tecnológica Energética",
+    organization: "Universidad del Valle, Comité de Investigación e innovación Tecnológica (SOE)",
+    date: "2 Dic 2024",
+    location: "Cochabamba, Bolivia",
+    role: "Participante",
     description:
-      "Conferencia sobre amenazas modernas en entornos distribuidos y prácticas de seguridad aplicadas a sistemas web.",
-    topics: ["Ciberseguridad", "Sistemas Distribuidos", "Web"],
-        certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Courses/Introto_Data_Science_page-0001.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0NvdXJzZXMvSW50cm90b19EYXRhX1NjaWVuY2VfcGFnZS0wMDAxLmpwZyIsImlhdCI6MTc1MTczMjY3MywiZXhwIjoxOTA5NDEyNjczfQ.saUPL2NANGdNZ377W47wvSAUMIuOJfWoa1PqIgv4Bc8",
-    evidenceUrl: "https://mi-servidor.com/fotos/charla-ciberseguridad.jpg",
-    link: "https://www.umsa.bo/eventos/ciberseguridad2024"
+      "Formación en habilidades de liderazgo y comunicación efectiva, orientada al trabajo en equipo dentro del área de Tecnologías de la Información e Innovación (IIT).",
+    topics: [],
+    certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Eventos/SOE-Jhael-Kuno.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0V2ZW50b3MvU09FLUpoYWVsLUt1bm8uanBlZyIsImlhdCI6MTc1MTc1Mjk1NCwiZXhwIjoxOTA5NDMyOTU0fQ.9oS-1F0cwLOHOMfRr6u5IbgLFrxHJNW7ehqEgNnMJ84",
+    evidenceUrl: "",
+    link: ""
   },
   {
     id: "3",
-    title: "Google DevFest Santa Cruz",
-    organization: "Google Developer Groups Bolivia",
-    date: "28 Ago 2023",
-    location: "Santa Cruz, Bolivia",
-    role: "Voluntario",
+    title: "Atrevete-T 2024",
+    organization: "Universidad del Valle",
+    date: "4 Jun 2024",
+    location: "Cochabamba, Bolivia",
+    role: "Participante",
     description:
-      "Apoyo logístico en uno de los eventos más grandes de tecnología en Bolivia, colaborando con ponentes internacionales.",
-    topics: ["Desarrollo Web", "Cloud", "IA"],
-        certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Courses/Introto_Data_Science_page-0001.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0NvdXJzZXMvSW50cm90b19EYXRhX1NjaWVuY2VfcGFnZS0wMDAxLmpwZyIsImlhdCI6MTc1MTczMjY3MywiZXhwIjoxOTA5NDEyNjczfQ.saUPL2NANGdNZ377W47wvSAUMIuOJfWoa1PqIgv4Bc8",
-    evidenceUrl: "https://mi-servidor.com/fotos/devfest-equipo.jpg",
-    link: "https://gdg.community.dev/events/details/devfest-2023-scz"
+      "Evento de innovación y emprendimiento organizado por la Universidad del Valle, donde se fomenta la creatividad y el desarrollo de proyectos tecnológicos.",
+    topics: [],
+      certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Eventos/Atrevete.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0V2ZW50b3MvQXRyZXZldGUuanBlZyIsImlhdCI6MTc1MTc1MzUxNywiZXhwIjoxOTA5NDMzNTE3fQ.eOHNjG47fkDRXUA7Dxc6vwlQVhPVkQ9nNKDmV4tSOkE",
+    evidenceUrl: "",
+    link: ""
   },
    {
-    id: "3",
-    title: "Google DevFest Santa Cruz",
-    organization: "Google Developer Groups Bolivia",
-    date: "28 Ago 2023",
-    location: "Santa Cruz, Bolivia",
-    role: "Voluntario",
-    description:
-      "Apoyo logístico en uno de los eventos más grandes de tecnología en Bolivia, colaborando con ponentes internacionales.",
-    topics: ["Desarrollo Web", "Cloud", "IA"],
-        certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Courses/Introto_Data_Science_page-0001.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0NvdXJzZXMvSW50cm90b19EYXRhX1NjaWVuY2VfcGFnZS0wMDAxLmpwZyIsImlhdCI6MTc1MTczMjY3MywiZXhwIjoxOTA5NDEyNjczfQ.saUPL2NANGdNZ377W47wvSAUMIuOJfWoa1PqIgv4Bc8",
-    evidenceUrl: "https://mi-servidor.com/fotos/devfest-equipo.jpg",
-    link: "https://gdg.community.dev/events/details/devfest-2023-scz"
+    id: "4",
+    title: "Univalle Techmakers 2022",
+    organization: "Univesidad del Valle",
+    date: "2 Dic 2022",
+    location: "Cochabamba, Bolivia",
+    role: "Participante",
+    description:"",
+    topics: [],
+    certificateUrl: "https://ztdaboxjmozyxrpvqdoi.supabase.co/storage/v1/object/sign/courses/Eventos/Techmakers.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNDQ4NGU3Yy0zZjQyLTQ4YWUtODM2Yy05MDgwNTliMjI3ODUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb3Vyc2VzL0V2ZW50b3MvVGVjaG1ha2Vycy5qcGVnIiwiaWF0IjoxNzUxNzU0MDA0LCJleHAiOjE5MDk0MzQwMDR9.1FYEb9Wmr85VHxLeiBm7quxzoJJjWlnIa97Pd_3A8Ko",
+    evidenceUrl: "",
+    link: ""
   }
 ];
