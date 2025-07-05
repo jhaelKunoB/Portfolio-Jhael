@@ -1,7 +1,11 @@
 'use client'
 import React, { useState } from 'react'
-import CourseCardContainer from "./component/Card"
-import {dataCourse} from "./data/data"
+import { dataCourse } from "./data/course"
+import {eventData} from "./data/event"
+// Importando los datos de los cursos y certificados
+import CourseSection from "./CourseSection/CourseSection"
+import CertificateSection from './EventSection/EventSection'
+
 const RenderToggle = ({ onSelect }) => {
   const [active, setActive] = useState('certificados')
 
@@ -14,21 +18,19 @@ const RenderToggle = ({ onSelect }) => {
     <div className="inline-flex rounded-xl border border-sky-950 overflow-hidden shadow-md">
       <button
         onClick={() => handleClick('certificados')}
-        className={`w-40 py-3 text-base font-semibold transition-colors duration-200 ${
-          active === 'certificados'
+        className={`w-40 py-3 text-base font-semibold transition-colors duration-200 ${active === 'certificados'
             ? 'bg-[#172e41] text-white'
             : 'bg-[#08131c] text-gray-300 hover:bg-[#11202e]'
-        }`}
+          }`}
       >
         Certificados
       </button>
       <button
         onClick={() => handleClick('cursos')}
-        className={`w-40 py-3 text-base font-semibold transition-colors duration-200 ${
-          active === 'cursos'
+        className={`w-40 py-3 text-base font-semibold transition-colors duration-200 ${active === 'cursos'
             ? 'bg-[#172e41] text-white'
             : 'bg-[#08131c] text-gray-300 hover:bg-[#11202e]'
-        }`}
+          }`}
       >
         Cursos
       </button>
@@ -46,16 +48,10 @@ const CertificatesAndCourses = () => {
       </div>
 
       <div>
-        {selected === 'certificados' ? (
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Certificados destacados</h3>
-            <p className="text-gray-400">Aquí puedes mostrar tus certificados de participación o logros.</p>
-          </div>
+        {selected === 'certificados' ? (          
+          <CertificateSection events={eventData}/>
         ) : (
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Cursos realizados</h3>
-            <CourseCardContainer courses={dataCourse}  />
-          </div>
+          <CourseSection courses={dataCourse} />
         )}
       </div>
     </section>

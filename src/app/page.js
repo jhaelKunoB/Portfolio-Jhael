@@ -1,11 +1,10 @@
 'use client';
-
 import HeroSeccion from "./module/HeroSeccion";
 import Navbar from "./module/Navbar";
 import AboutSection from "./module/AboutSection";
 import { BackgroundBeams } from "../components/background-beams";
 import ProyectSection from "./module/Proyects/ProyectsSeccion";
-import CourseSection from "./module/Course/CourseSection";
+import EducationSection from "./module/Education/EducationSection";
 import FooterSection from "./module/Footer/FooterSection";
 import ContactSection from './module/Contact/ContactSection'
 import SkillSection from "./module/Skills/SkillsSection";
@@ -18,7 +17,7 @@ export default function Home() {
         <AboutSection />
         <SkillSection />
         <ProyectSection />
-        <CourseSection />
+        <EducationSection />
         <ContactSection />
       </div>
       <BackgroundBeams className="z-[-1]" />
