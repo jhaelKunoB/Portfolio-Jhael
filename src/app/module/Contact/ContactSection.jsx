@@ -1,8 +1,13 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import { Player } from '@lottiefiles/react-lottie-player';
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import dynamic from 'next/dynamic'
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
+
+// Importa dinámicamente Lottie Player (solo en el cliente)
+const Player = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then(mod => mod.Player),
+  { ssr: false }
+)
 
 const ContactSection = () => {
   return (
@@ -11,10 +16,10 @@ const ContactSection = () => {
 
         {/* Imagen o animación */}
         <div className="flex justify-center">
-           <Player
+          <Player
             autoplay
             loop
-            src="/animations/contact.json" // ← asegúrate de colocar el archivo en public/animations
+            src="/animations/contact.json"
             className="w-full max-w-sm"
           />
         </div>
@@ -51,7 +56,7 @@ const ContactSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default ContactSection
