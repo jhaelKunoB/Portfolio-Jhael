@@ -16,7 +16,6 @@ export const projects = [
     images: [
       "/images/proyects/Pymes/1.png",
       "/images/proyects/Pymes/pymes1.png",
-      "/images/proyects/Pymes/pymes1.png",
     ],
   },
   {

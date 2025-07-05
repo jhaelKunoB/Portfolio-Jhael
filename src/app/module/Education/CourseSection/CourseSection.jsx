@@ -8,14 +8,10 @@ const CourseCardContainer = ({ courses }) => {
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   return (
-    <div className="relative bg-[#040c14] py-10 px-6 text-white max-w-6xl mx-auto">
-      {/* TÍTULO */}
-      <div className="mb-10 text-center">
-        <h3 className="text-2xl sm:text-3xl font-bold mb-2">Cursos realizados</h3>
-        <p className="text-gray-400 text-sm sm:text-base">
-          Aquí puedes ver algunos de los cursos que completé durante mi formación.
-        </p>
-      </div>
+    <div className="relative bg-[#040c14] text-white mx-4">
+     <span className="text-base sm:text-lg text-gray-200 text-center block mb-6">
+        Certificaciones obtenidas tras completar los cursos
+      </span>
 
       {/* TARJETAS */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 z-10 relative">

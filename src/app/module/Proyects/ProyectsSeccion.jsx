@@ -6,9 +6,9 @@ import {projects} from "./data/projectData";
 const ProyectSeccion = () => {
    
     return (
-        <div className="relative w-full overflow-clip">
+        <section id='projects' className="relative w-full overflow-clip">
             <Timeline data={projects} />
-        </div>
+        </section>
     );
 }
 

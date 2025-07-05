@@ -15,7 +15,7 @@ const EventCard = ({ event }) => {
             </div>
 
             {/* Texto */}
-            <div className="mt-3 hover:pl-2 transition-all duration-300">
+            <div className="mt-3 hover:pl-2 transition-all duration-500">
                 <p className="text-base font-semibold text-white">{event.title}</p>
                 {event.description && (
                     <p className="text-sm text-gray-400 mt-1">{event.description}</p>

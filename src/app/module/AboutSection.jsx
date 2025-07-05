@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const AboutSection = () => {
   return (
-    <section className="py-10 px-6 max-w-full overflow-hidden bg-[#040c14]">
+    <section id="about" className="py-10 px-6 max-w-full overflow-hidden bg-[#040c14]">
       <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 gap-10 items-center">
 
         {/* Columna izquierda: título arriba, imagen abajo */}

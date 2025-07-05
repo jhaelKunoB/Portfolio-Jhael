@@ -23,7 +23,7 @@ const RenderToggle = ({ onSelect }) => {
             : 'bg-[#08131c] text-gray-300 hover:bg-[#11202e]'
           }`}
       >
-        Certificados
+        Eventos
       </button>
       <button
         onClick={() => handleClick('cursos')}
@@ -42,7 +42,7 @@ const CertificatesAndCourses = () => {
   const [selected, setSelected] = useState('certificados')
 
   return (
-    <section className="py-16 text-white max-w-6xl mx-auto px-6">
+    <section className="py-16 text-white max-w-6xl mx-auto">
       <div className="flex justify-center mb-10">
         <RenderToggle onSelect={setSelected} />
       </div>

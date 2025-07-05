@@ -19,7 +19,7 @@ const FooterSection = () => {
             <FaGithub size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/tu_usuario"
+           href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"
@@ -27,7 +27,7 @@ const FooterSection = () => {
             <FaLinkedin size={22} />
           </a>
           <a
-            href="https://instagram.com/tu_usuario"
+            href="https://www.instagram.com/kunobustosjhael/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"

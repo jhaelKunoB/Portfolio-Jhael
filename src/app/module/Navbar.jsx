@@ -7,9 +7,9 @@ import MenuOverlay from './MenuOverlay';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const navLinks = [
-    { href: '/', title: 'About' },
-    { href: '/projects', title: 'Projects' },
-    { href: '/contact', title: 'Contact' },
+    { href: '#about', title: 'Sobre mí' },
+    { href: '#projects', title: 'Proyectos' },
+    { href: '#contact', title: 'Contacto' },
 ];
 
 const Navbar = () => {
@@ -34,30 +34,33 @@ const Navbar = () => {
                     {/* REDES SOCIALES */}
                     <div className="hidden md:flex items-center space-x-4">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/jhaelKunoB"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-sky-400 transition"
+                            className="text-white transition"
                         >
-                            <FaGithub size={20} />
+                            <FaGithub size={20} className="transform transition-transform duration-200 hover:scale-125" />  
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-sky-400 transition"
+                            className="text-white hover:text-white   transition"
                         >
-                            <FaLinkedin size={20} />
+                            <FaLinkedin size={20} className="transform transition-transform duration-200 hover:scale-125" />
                         </a>
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/kunobustosjhael/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-sky-400 transition"
+                            className="text-white hover:text-white transition"
+                            
                         >
-                            <FaInstagram size={20} />
+                            <FaInstagram size={20} className="transform transition-transform duration-200 hover:scale-125"/>
                         </a>
                     </div>
+
+
 
                     {/* BOTÓN MENÚ MOBILE */}
                     <div className="md:hidden">
@@ -75,7 +78,8 @@ const Navbar = () => {
                 </div>
 
                 {/* MENÚ MOBILE */}
-                {navbarOpen && <MenuOverlay links={navLinks} />}
+                {navbarOpen && <MenuOverlay links={navLinks} onClose={() => setNavbarOpen(false)} />}
+
             </div>
         </nav>
     );

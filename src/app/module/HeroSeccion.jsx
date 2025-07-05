@@ -48,23 +48,26 @@ const HeroSeccion = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            ref={contactBtnRef}
+          <a
+            href="#contact"
             onMouseEnter={() => handleMouseEnter(contactBtnRef)}
             onMouseLeave={() => handleMouseLeave(contactBtnRef)}
+            ref={contactBtnRef}
             className="px-6 py-3 rounded-full text-white bg-white/10 hover:bg-white/20 border border-white/10 shadow-md backdrop-blur transition-all w-full sm:w-auto"
           >
             Contáctame
-          </button>
+          </a>
 
-          <button
+          <a
+            href="/Jhael-Kuno-CV.pdf"
+            download
             ref={downloadBtnRef}
             onMouseEnter={() => handleMouseEnter(downloadBtnRef)}
             onMouseLeave={() => handleMouseLeave(downloadBtnRef)}
             className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto"
           >
             Descargar CV
-          </button>
+          </a>
         </div>
 
       </div>
