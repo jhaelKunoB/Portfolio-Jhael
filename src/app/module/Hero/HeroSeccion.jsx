@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import AnimatedText from "./animation/AnimatedText";
 import AnimatedTitle from "./animation/AnimatedTitle";
 import MotionReveal from "./animation/MotionReveal";
+import AnimatedButton from "./animation/AnimatedButton";
 const HeroSeccion = () => {
   // Dos refs, uno por cada botón
   const contactBtnRef = useRef(null)
@@ -51,34 +52,26 @@ const HeroSeccion = () => {
 
 
 
-        <MotionReveal className="mt-4 mb-8" yOffset={20}>
+        <MotionReveal className="mt-4 mb-8" yOffset={20} delay={0.5}>
           <AnimatedText text={'Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.'} />
         </MotionReveal>
 
 
 
 
-        <MotionReveal yOffset={20} className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
-            onMouseEnter={() => handleMouseEnter(contactBtnRef)}
-            onMouseLeave={() => handleMouseLeave(contactBtnRef)}
-            ref={contactBtnRef}
+        <MotionReveal yOffset={20} delay={1.5} className="flex flex-col sm:flex-row gap-4 justify-center">
+          <AnimatedButton
             className="px-6 py-3 rounded-full text-white bg-white/10 hover:bg-white/20 border border-white/10 shadow-md backdrop-blur transition-all w-full sm:w-auto"
           >
             Contáctame
-          </a>
+          </AnimatedButton>
 
-          <a
-            href="/Jhael-Kuno-CV.pdf"
-            download
-            ref={downloadBtnRef}
-            onMouseEnter={() => handleMouseEnter(downloadBtnRef)}
-            onMouseLeave={() => handleMouseLeave(downloadBtnRef)}
+
+          <AnimatedButton
             className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto"
           >
             Descargar CV
-          </a>
+          </AnimatedButton>
         </MotionReveal>
 
       </div>
