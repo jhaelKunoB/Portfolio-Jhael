@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import gsap from 'gsap'
 import AnimatedText from "./animation/AnimatedText";
 import AnimatedTitle from "./animation/AnimatedTitle";
+import MotionReveal from "./animation/MotionReveal";
 const HeroSeccion = () => {
   // Dos refs, uno por cada botón
   const contactBtnRef = useRef(null)
@@ -28,15 +29,15 @@ const HeroSeccion = () => {
   return (
     <section className="flex items-center justify-center text-center min-h-[80vh] px-4">
       <div className="max-w-2xl w-full">
-       
-       
+
+
         {/* <h1 className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]">
           Jhael Kuno Bustos
         </h1> */}
 
         <AnimatedTitle text={'Jhael Kuno Bustos'} className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]" />
 
-        <div className="my-4 inline-block relative">
+        <MotionReveal className="my-4 inline-block relative" yOffset={20}>
           <PointerHighlight
             rectangleClassName=" rounded-lg p-[2px] border-2 border-sky-900"
             pointerClassName="text-sky-900"
@@ -46,14 +47,18 @@ const HeroSeccion = () => {
               Ingeniero en Sistemas
             </span>
           </PointerHighlight>
-        </div>
+        </MotionReveal>
 
-        {/* <p className="mt-4 text-sm lg:text-base text-gray-300 mb-8">
-          Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.
-        </p> */}
-        <AnimatedText text={'Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.'} />
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <MotionReveal className="mt-4 mb-8" yOffset={20}>
+          <AnimatedText text={'Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.'} />
+        </MotionReveal>
+
+
+
+
+        <MotionReveal yOffset={20} className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
             onMouseEnter={() => handleMouseEnter(contactBtnRef)}
@@ -74,7 +79,7 @@ const HeroSeccion = () => {
           >
             Descargar CV
           </a>
-        </div>
+        </MotionReveal>
 
       </div>
     </section>
