@@ -1,8 +1,9 @@
 'use client'
-import { PointerHighlight } from "../../components/pointer-highlight";
+import { PointerHighlight } from "../../../components/pointer-highlight";
 import React, { useRef } from 'react'
 import gsap from 'gsap'
-
+import AnimatedText from "./animation/AnimatedText";
+import AnimatedTitle from "./animation/AnimatedTitle";
 const HeroSeccion = () => {
   // Dos refs, uno por cada botón
   const contactBtnRef = useRef(null)
@@ -27,9 +28,13 @@ const HeroSeccion = () => {
   return (
     <section className="flex items-center justify-center text-center min-h-[80vh] px-4">
       <div className="max-w-2xl w-full">
-        <h1 className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]">
+       
+       
+        {/* <h1 className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]">
           Jhael Kuno Bustos
-        </h1>
+        </h1> */}
+
+        <AnimatedTitle text={'Jhael Kuno Bustos'} className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]" />
 
         <div className="my-4 inline-block relative">
           <PointerHighlight
@@ -43,9 +48,10 @@ const HeroSeccion = () => {
           </PointerHighlight>
         </div>
 
-        <p className="mt-4 text-sm lg:text-base text-gray-300 mb-8">
+        {/* <p className="mt-4 text-sm lg:text-base text-gray-300 mb-8">
           Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.
-        </p>
+        </p> */}
+        <AnimatedText text={'Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.'} />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

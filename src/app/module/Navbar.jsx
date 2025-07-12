@@ -5,6 +5,7 @@ import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { motion } from "framer-motion"
 
 const navLinks = [
     { href: '#about', title: 'Sobre mí' },
@@ -20,9 +21,15 @@ const Navbar = () => {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-8">
                 <div className="bg-white/10 backdrop-blur-xl border border-sky-900 rounded-2xl shadow-lg px-6 py-4 flex items-center justify-between">
                     {/* LOGO */}
-                    <Link href="/" className="text-2xl text-white font-semibold mr-4">
-                        LOGO
-                    </Link>
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}>
+                        <Link href="/" className="text-2xl text-white font-semibold mr-4">
+                            PORFOLIO
+                        </Link>
+                    </motion.div>
+
 
                     {/* MENÚ PRINCIPAL */}
                     <div className="hidden md:flex items-center space-x-8">
@@ -39,7 +46,7 @@ const Navbar = () => {
                             rel="noopener noreferrer"
                             className="text-white transition"
                         >
-                            <FaGithub size={20} className="transform transition-transform duration-200 hover:scale-125" />  
+                            <FaGithub size={20} className="transform transition-transform duration-200 hover:scale-125" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/"
@@ -54,9 +61,9 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white hover:text-white transition"
-                            
+
                         >
-                            <FaInstagram size={20} className="transform transition-transform duration-200 hover:scale-125"/>
+                            <FaInstagram size={20} className="transform transition-transform duration-200 hover:scale-125" />
                         </a>
                     </div>
 

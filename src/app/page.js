@@ -1,5 +1,5 @@
 'use client';
-import HeroSeccion from "./module/HeroSeccion";
+import HeroSeccion from "./module/Hero/HeroSeccion";
 import Navbar from "./module/Navbar";
 import AboutSection from "./module/AboutSection";
 import { BackgroundBeams } from "../components/background-beams";
