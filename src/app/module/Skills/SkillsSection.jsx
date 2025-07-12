@@ -32,13 +32,12 @@ const SkillsSection = () => {
                     </h2>
                 </ScrollReveal>
 
-                <AnimatedText
-                    className="text-gray-400 text-sm sm:text-base"
-
-                    text='Un resumen visual de las herramientas que utilizo en mi stack diario.' />
+                <ScrollReveal delay={0.2}>
+                     <AnimatedText className="text-gray-400 text-sm sm:text-base" text='Un resumen visual de las herramientas que utilizo en mi stack diario.' />
+                </ScrollReveal>
             </div>
 
-            <ScrollReveal delay={2}>
+            <ScrollReveal delay={0.5}>
                 <AnimatedTooltip skills={skills} />
             </ScrollReveal>
 

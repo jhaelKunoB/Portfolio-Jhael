@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-[#040c14] border-t border-white/10 text-white py-6">
-      <div className="container mx-auto px-4 flex flex-col items-center">
-        <p className="text-sm text-gray-400 mb-3">
+    <footer className="border-t border-white/10 text-white py-6">
+      <div className="mx-auto px-4 flex flex-col items-center">
+        <p className="text-sm text-white mb-3">
           Gracias por visitar mi portafolio ✨
         </p>
         <div className="flex space-x-5">

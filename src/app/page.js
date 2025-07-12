@@ -20,8 +20,8 @@ export default function Home() {
         <EducationSection />
         <ContactSection />
       </div>
-      <BackgroundBeams className="z-[-1]" />
       <FooterSection />
+      <BackgroundBeams className="z-[-1]" />
     </main>
   );
 }

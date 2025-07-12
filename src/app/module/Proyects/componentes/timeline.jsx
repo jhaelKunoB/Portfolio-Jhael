@@ -6,7 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 import TechIcons from "./IconTech/TechIcons";
 import { AnimatedTooltip } from "../componentes/IconTech/components/animated-tooltip";
 import Carousel from "./Carusel/Carousel";
-
+import ScrollReveal from "../../Skills/animation/ScrollReveal";
+import AnimatedText from '../animate/AnimatedText'
 // Componente Timeline que recibe datos de proyectos y los muestra en una línea de tiempo
 export const Timeline = ({ data }) => {
     // Validación de datos de entrada
@@ -42,7 +43,6 @@ export const Timeline = ({ data }) => {
         // Cleanup del observer
         return () => observer.disconnect();
     }, [data]);
-
     // Hook de scroll para obtener el progreso de scroll
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -58,11 +58,14 @@ export const Timeline = ({ data }) => {
             className="relative w-full bg-[#040c14] font-sans md:px-10"
             ref={containerRef}>
 
-            <div className="relative max-w-6xl mx-auto px-2 sm:px-1 text-center">
-                <h2 className="flex items-center justify-center text-4xl font-bold text-white">
-                    PROYECTOS
-                </h2>
-            </div>
+            <ScrollReveal>
+                <div className="relative mb-5 max-w-6xl mx-auto px-2 sm:px-1 text-center">
+                    <h2 className="flex items-center justify-center text-4xl font-bold text-white">
+                        PROYECTOS
+                    </h2>
+                </div>
+            </ScrollReveal>
+
 
 
 
@@ -82,39 +85,58 @@ export const Timeline = ({ data }) => {
                             </div>
                             {/* Título y período - visible solo en desktop */}
                             <div className="hidden md:block flex-col">
-                                <h3
-                                    className="text-xl md:pl-20 md:text-4xl font-bold text-sky-200 ">
-                                    {item.title}
-                                </h3>
-                                <span className="text-xs md:pl-20 md:text-sm text-neutral-500">
-                                    {item.period}
-                                </span>
+                                <ScrollReveal delay={0.2}>
+                                    <h3
+                                        className="text-xl md:pl-20 md:text-4xl font-bold text-sky-200 ">
+                                        {item.title}
+                                    </h3>
+                                </ScrollReveal>
+                                <ScrollReveal delay={0.2}>
+                                    <span className="text-xs md:pl-20 md:text-sm text-neutral-500">
+                                        {item.period}
+                                    </span>
+                                </ScrollReveal>
+
                             </div>
                         </div>
 
                         {/* Contenido del proyecto (lado derecho) */}
                         <div className="relative pl-20 pr-4 md:pl-4 w-full">
                             {/* Título y período - visible solo en móvil */}
+
                             <div className="md:hidden flex-col mb-4">
-                                <h3 className="block text-2xl  text-left font-bold text-sky-200">
-                                    {item.title}
-                                </h3>
-                                <span className="text-xs md:text-sm text-white">
-                                    {item.period}
-                                </span>
+                                <ScrollReveal delay={0.2}>
+                                    <h3 className="block text-2xl  text-left font-bold text-sky-200">
+                                        {item.title}
+                                    </h3>
+                                </ScrollReveal>
+                                <ScrollReveal delay={0.3}>
+                                    <span className="text-xs md:text-sm text-white">
+                                        {item.period}
+                                    </span>
+                                </ScrollReveal>
                             </div>
+
+
 
                             {/* Descripción, tecnologías e imágenes del proyecto */}
                             <div>
                                 {/* Descripción del proyecto */}
-                                <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200 text-justify ">
-                                    {item.description}
-                                </p>
+                                <ScrollReveal delay={0.3}>
+                                    <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200 text-justify">
+                                        {item.description}
+                                    </p>
+                                </ScrollReveal>
+
+
 
                                 {/* Componente para mostrar iconos de tecnologías */}
-                                <div className="flex flex-row items-center justify-start mb-5 w-full">
-                                    <AnimatedTooltip techs={item.technologies} />
-                                </div>
+                                <ScrollReveal delay={0.4}>
+                                    <div className="flex flex-row items-center justify-start mb-5 w-full">
+                                        <AnimatedTooltip techs={item.technologies} />
+                                    </div>
+                                </ScrollReveal>
+
 
                                 {/* Carrusel de imágenes del proyecto */}
                                 <div>

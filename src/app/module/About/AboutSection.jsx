@@ -53,10 +53,10 @@ const AboutSection = () => {
             </p>
 
             <div className="relative mt-6 flex space-x-6 z-10 justify-center md:justify-start">
-              <a href="https://instagram.com/tu_usuario" target="_blank" className="hover:text-fuchsia-500" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/kunobustosjhael/" target="_blank" className="hover:text-fuchsia-500" rel="noopener noreferrer">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://linkedin.com/in/tu_usuario" target="_blank" className="hover:text-blue-600" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/" target="_blank" className="hover:text-blue-600" rel="noopener noreferrer">
                 <FaLinkedin size={24} />
               </a>
               <a href="https://github.com/jhaelKunoB" target="_blank" className="hover:text-sky-500" rel="noopener noreferrer">
