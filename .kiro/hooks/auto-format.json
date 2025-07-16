@@ -1,0 +1,27 @@
+{
+  "name": "Auto Format Code",
+  "description": "Formatea automáticamente el código cuando se modifica un archivo",
+  "trigger": {
+    "type": "file_save",
+    "patterns": [
+      "**/*.js",
+      "**/*.jsx", 
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.css",
+      "**/*.json"
+    ]
+  },
+  "actions": [
+    {
+      "type": "agent_execution",
+      "prompt": "Formatea y mejora la legibilidad del código en el archivo que acaba de ser modificado. Asegúrate de:\n\n1. **Indentación consistente** - Usa 2 espacios para JavaScript/React\n2. **Espaciado apropiado** - Entre operadores, después de comas, etc.\n3. **Organización de imports** - Agrupa y ordena las importaciones\n4. **Nombres descriptivos** - Sugiere mejores nombres si es necesario\n5. **Comentarios útiles** - Agrega comentarios donde sea necesario\n6. **Estructura limpia** - Organiza el código de manera lógica\n7. **Convenciones de React** - Sigue las mejores prácticas de React/Next.js\n8. **Tailwind CSS** - Organiza las clases de Tailwind de manera legible\n\nSolo modifica el archivo si realmente necesita formateo. Si ya está bien formateado, no hagas cambios innecesarios.",
+      "context": {
+        "includeModifiedFile": true,
+        "includeProjectStructure": false
+      }
+    }
+  ],
+  "enabled": true,
+  "autoApprove": false
+}

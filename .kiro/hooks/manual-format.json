@@ -1,0 +1,21 @@
+{
+  "name": "Formatear Código Manualmente",
+  "description": "Formatea el archivo actual cuando lo solicites manualmente",
+  "trigger": {
+    "type": "manual",
+    "buttonText": "🎨 Formatear Código",
+    "buttonTooltip": "Formatea y mejora la legibilidad del código actual"
+  },
+  "actions": [
+    {
+      "type": "agent_execution",
+      "prompt": "Formatea y optimiza el código del archivo actual para máxima legibilidad y siguiendo las mejores prácticas:\n\n## Formateo General\n- ✅ Indentación consistente (2 espacios)\n- ✅ Espaciado apropiado entre operadores\n- ✅ Líneas no muy largas (máximo 80-100 caracteres)\n- ✅ Punto y coma consistente\n\n## React/JavaScript\n- ✅ Imports organizados (externos primero, luego internos)\n- ✅ Destructuring cuando sea apropiado\n- ✅ Arrow functions vs function declarations consistente\n- ✅ Props organizadas y con tipos si es TypeScript\n\n## Tailwind CSS\n- ✅ Clases organizadas por categoría (layout, spacing, colors, etc.)\n- ✅ Usar clsx() o cn() para clases condicionales\n- ✅ Responsive design claro\n\n## Comentarios y Documentación\n- ✅ JSDoc para funciones complejas\n- ✅ Comentarios explicativos donde sea necesario\n- ✅ TODO/FIXME marcados claramente\n\n## Nombres y Estructura\n- ✅ Variables y funciones con nombres descriptivos\n- ✅ Componentes bien estructurados\n- ✅ Lógica separada de la presentación\n\nSolo haz cambios que mejoren realmente la legibilidad. Mantén la funcionalidad exactamente igual.",
+      "context": {
+        "includeActiveFile": true,
+        "includeSteering": true
+      }
+    }
+  ],
+  "enabled": true,
+  "autoApprove": false
+}

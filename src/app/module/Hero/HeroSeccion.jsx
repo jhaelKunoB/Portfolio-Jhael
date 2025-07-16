@@ -36,6 +36,10 @@ const HeroSeccion = () => {
           Jhael Kuno Bustos
         </h1> */}
 
+
+
+
+
         <AnimatedTitle text={'Jhael Kuno Bustos'} className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]" />
 
         <MotionReveal className="my-4 inline-block relative" yOffset={20}>

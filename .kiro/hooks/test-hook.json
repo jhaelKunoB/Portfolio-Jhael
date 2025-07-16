@@ -1,0 +1,16 @@
+{
+  "name": "Test Hook",
+  "description": "Hook de prueba simple",
+  "trigger": {
+    "type": "manual",
+    "buttonText": "🧪 Test",
+    "buttonTooltip": "Hook de prueba"
+  },
+  "actions": [
+    {
+      "type": "agent_execution",
+      "prompt": "Di 'Hook funcionando correctamente' y muestra la fecha actual."
+    }
+  ],
+  "enabled": true
+}

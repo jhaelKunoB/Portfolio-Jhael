@@ -35,10 +35,10 @@ export const projects = [
     images: [
       "/images/proyects/Servitec/servitec1.png",
       "/images/proyects/Servitec/servitec2.png",
-      "/images/proyects/Servitec/servitec3.png",
-      "/images/proyects/Servitec/servitec4.png",
-      "/images/proyects/Servitec/servitec5.png",
-      "/images/proyects/Servitec/servitec6.png",
+      // "/images/proyects/Servitec/servitec3.png",
+      // "/images/proyects/Servitec/servitec4.png",
+      // "/images/proyects/Servitec/servitec5.png",
+      // "/images/proyects/Servitec/servitec6.png",
     ],
   },
 

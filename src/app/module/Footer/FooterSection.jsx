@@ -19,7 +19,7 @@ const FooterSection = () => {
             <FaGithub size={22} />
           </a>
           <a
-           href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/"
+            href="https://www.linkedin.com/in/kuno-bustos-jhael-8432b8324/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"

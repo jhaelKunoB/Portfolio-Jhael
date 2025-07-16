@@ -21,7 +21,7 @@ const AboutSection = () => {
           {/* Imagen circular */}
           <ScrollReveal delay={0.5}>
             <Image
-              src="/images/developer.jpg"
+              src="/images/image.png"
               alt="Foto de perfil"
               width={350}
               height={350}
