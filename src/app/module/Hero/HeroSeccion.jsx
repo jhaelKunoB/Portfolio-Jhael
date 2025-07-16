@@ -1,15 +1,15 @@
-'use client'
+"use client";
 import { PointerHighlight } from "../../../components/pointer-highlight";
-import React, { useRef } from 'react'
-import gsap from 'gsap'
+import React, { useRef } from "react";
+import gsap from "gsap";
 import AnimatedText from "./animation/AnimatedText";
 import AnimatedTitle from "./animation/AnimatedTitle";
 import MotionReveal from "./animation/MotionReveal";
 import AnimatedButton from "./animation/AnimatedButton";
 const HeroSeccion = () => {
   // Dos refs, uno por cada botón
-  const contactBtnRef = useRef(null)
-  const downloadBtnRef = useRef(null)
+  const contactBtnRef = useRef(null);
+  const downloadBtnRef = useRef(null);
 
   const handleMouseEnter = (ref) => {
     gsap.to(ref.current, {
@@ -30,17 +30,14 @@ const HeroSeccion = () => {
   return (
     <section className="flex items-center justify-center text-center min-h-[80vh] px-4">
       <div className="max-w-2xl w-full">
-
-
         {/* <h1 className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]">
           Jhael Kuno Bustos
         </h1> */}
 
-
-
-
-
-        <AnimatedTitle text={'Jhael Kuno Bustos'} className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]" />
+        <AnimatedTitle
+          text={"Jhael Kuno Bustos"}
+          className="mb-2 text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#19335A] via-[#4A78A4] to-[#8FC8EB]"
+        />
 
         <MotionReveal className="my-4 inline-block relative" yOffset={20}>
           <PointerHighlight
@@ -54,33 +51,32 @@ const HeroSeccion = () => {
           </PointerHighlight>
         </MotionReveal>
 
-
-
         <MotionReveal className="mt-4 mb-8" yOffset={20} delay={0.5}>
-          <AnimatedText text={'Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas.'} />
+          <AnimatedText
+            text={
+              "Estoy construyendo mi camino en el mundo del desarrollo. Cada proyecto aquí representa un paso más en mi aprendizaje y una muestra de lo que disfruto hacer: crear soluciones funcionales y creativas."
+            }
+          />
         </MotionReveal>
 
-
-
-
-        <MotionReveal yOffset={20} delay={1.5} className="flex flex-col sm:flex-row gap-4 justify-center">
-          <AnimatedButton
-            className="px-6 py-3 rounded-full text-white bg-white/10 hover:bg-white/20 border border-white/10 shadow-md backdrop-blur transition-all w-full sm:w-auto"
-          >
-            Contáctame
-          </AnimatedButton>
-
-
-          <AnimatedButton
-            className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto"
-          >
-            Descargar CV
-          </AnimatedButton>
+        <MotionReveal
+          yOffset={20}
+          delay={1.5}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+         
+            <AnimatedButton  href="#contact" className="px-6 py-3 rounded-full text-white bg-white/10 hover:bg-white/20 border border-white/10 shadow-md backdrop-blur transition-all w-full sm:w-auto">
+              Contáctame
+            </AnimatedButton>
+         
+            <AnimatedButton  href="/JhaelKunoCV.pdf" download className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto">
+              Descargar CV
+            </AnimatedButton>
+         
         </MotionReveal>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSeccion
+export default HeroSeccion;
