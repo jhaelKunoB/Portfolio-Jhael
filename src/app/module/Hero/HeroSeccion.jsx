@@ -69,7 +69,7 @@ const HeroSeccion = () => {
               Contáctame
             </AnimatedButton>
          
-            <AnimatedButton  href="/JhaelKunoCV.pdf" download className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto">
+            <AnimatedButton  href="/JhaelkunobustosCV.pdf" download className="px-6 py-3 rounded-full border border-white/10 text-white hover:bg-white/10 hover:text-white shadow-md backdrop-blur transition-all w-full sm:w-auto">
               Descargar CV
             </AnimatedButton>
          
